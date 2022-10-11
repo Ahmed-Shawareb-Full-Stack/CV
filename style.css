@@ -1,0 +1,107 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+/*Vars*/
+.linear-gradient-red {
+  background: rgb(253, 133, 144);
+  background: linear-gradient(180deg, rgb(253, 133, 144) 0%, rgb(252, 54, 74) 100%);
+}
+
+.linear-gradient-green {
+  background: rgb(129, 251, 184);
+  background: linear-gradient(180deg, rgb(129, 251, 184) 0%, rgb(14, 181, 89) 100%);
+}
+
+.linear-gradient-yellow {
+  background: rgb(255, 224, 13);
+  background: linear-gradient(180deg, rgb(255, 224, 13) 0%, rgb(254, 161, 39) 100%);
+}
+
+.linear-gradient-blue {
+  background: rgb(59, 153, 254);
+  background: linear-gradient(180deg, rgb(59, 153, 254) 0%, rgb(59, 84, 255) 100%);
+}
+
+.linear-gradient-blue-light {
+  background: rgb(171, 220, 255);
+  background: linear-gradient(180deg, rgb(171, 220, 255) 0%, rgb(0, 149, 255) 100%);
+}
+
+.linear-gradient-terq {
+  background: rgb(49, 238, 218);
+  background: linear-gradient(180deg, rgb(49, 238, 218) 0%, rgb(13, 203, 208) 100%);
+  background: rgb(49, 238, 218);
+  background: linear-gradient(180deg, rgb(49, 238, 218) 0%, rgb(13, 203, 208) 100%);
+}
+
+.linear-gradient-magenta {
+  background: rgb(178, 129, 253);
+  background: linear-gradient(180deg, rgb(178, 129, 253) 0%, rgb(132, 76, 250) 100%);
+}
+
+.linear-gradient-magenta-light {
+  background: rgb(206, 159, 252);
+  background: linear-gradient(180deg, rgb(206, 159, 252) 0%, rgb(134, 27, 241) 100%);
+}
+
+/*Vars*/
+/*Start Header*/
+header .info .content {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .info .profile-image {
+  width: 45%;
+  outline: white solid 16px;
+  z-index: 99;
+}
+header .info .background-shape {
+  left: 0%;
+}
+header .info .name {
+  font-weight: 600;
+  font-size: 24px;
+}
+header .info .title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #fc394d;
+}
+header .info .title-description {
+  font-weight: 500;
+  font-size: 20px;
+}
+header .info .title-description-more {
+  font-weight: 500;
+  font-size: 16px;
+}
+header .social li a {
+  color: #fc394d;
+}
+header .social li a:visited, header .social li a:focus {
+  color: #fc394d;
+}
+header .main-btn {
+  color: white;
+  border: none;
+  width: 200px;
+}
+header .main-btn:hover {
+  color: white;
+  border: none;
+}
+header .header-btns .header-btn {
+  width: 45%;
+  height: auto;
+  background-color: white;
+}
+header .header-btns .header-btn img {
+  width: 50%;
+}
+
+/*End Header*//*# sourceMappingURL=style.css.map */

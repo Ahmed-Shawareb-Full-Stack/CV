@@ -1,0 +1,401 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  // border: 1px solid red;
+}
+/*Vars*/
+$title-color: #fc394d;
+.linear-gradient-red {
+  background: rgb(253, 133, 144);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 133, 144, 1) 0%,
+    rgba(252, 54, 74, 1) 100%
+  );
+}
+.linear-gradient-green {
+  background: rgb(129, 251, 184);
+  background: linear-gradient(
+    180deg,
+    rgba(129, 251, 184, 1) 0%,
+    rgba(14, 181, 89, 1) 100%
+  );
+}
+.linear-gradient-yellow {
+  background: rgb(255, 224, 13);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 224, 13, 1) 0%,
+    rgba(254, 161, 39, 1) 100%
+  );
+}
+.linear-gradient-blue {
+  background: rgb(59, 153, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(59, 153, 254, 1) 0%,
+    rgba(59, 84, 255, 1) 100%
+  );
+}
+.linear-gradient-blue-light {
+  background: rgb(171, 220, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(171, 220, 255, 1) 0%,
+    rgba(0, 149, 255, 1) 100%
+  );
+}
+.linear-gradient-terq {
+  background: rgb(49, 238, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(49, 238, 218, 1) 0%,
+    rgba(13, 203, 208, 1) 100%
+  );
+  background: rgb(49, 238, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(49, 238, 218, 1) 0%,
+    rgba(13, 203, 208, 1) 100%
+  );
+}
+.linear-gradient-magenta {
+  background: rgb(178, 129, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(178, 129, 253, 1) 0%,
+    rgba(132, 76, 250, 1) 100%
+  );
+}
+.linear-gradient-magenta-light {
+  background: rgb(206, 159, 252);
+  background: linear-gradient(
+    180deg,
+    rgba(206, 159, 252, 1) 0%,
+    rgba(134, 27, 241, 1) 100%
+  );
+}
+/*Vars*/
+/*Start Header*/
+header {
+  .info {
+    background-image: url("src/images/bg-img.jpg");
+    background-size: cover;
+    .info-content {
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      img {
+        width: 50%;
+        outline: white solid 1rem;
+      }
+      h1 {
+        color: $title-color;
+      }
+      .social-container {
+        ul {
+          li {
+            a {
+              color: rgba(0, 0, 0, 0.5);
+              &:visited,
+              &:focus {
+                color: rgba(0, 0, 0, 0.5);
+              }
+            }
+          }
+        }
+      }
+      .info-btns {
+        .info-btn {
+          width: 180px;
+          color: white;
+          border: none;
+          width: 200px;
+          &:hover {
+            color: white;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+  .ref-btns {
+    margin: auto;
+    a {
+      .header-btn {
+        background-color: white;
+        border: none;
+        filter: drop-shadow(0px 0px 30px rgba(7, 156, 255, 0.2));
+        transition: 0.3s;
+        &:hover {
+          filter: drop-shadow(0px 0px 20px rgba(7, 156, 255, 0.8));
+          margin-top: -0.2rem;
+        }
+        p {
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+        @media screen and (max-width: 575px) {
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+  .info-btns {
+    .cv-download {
+      filter: drop-shadow(0px 16px 24px rgba(252, 59, 78, 0.24));
+      transition: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 24px rgba(252, 59, 78, 0.75));
+      }
+    }
+    .hire-me {
+      box-shadow: 0px 16px 24px rgba(134, 78, 250, 0.24);
+      transition: 0.3s;
+      &:hover {
+        box-shadow: 0px 0 5rem rgba(134, 78, 250, 0.75);
+      }
+    }
+  }
+}
+/*End Header*/
+/*Start main*/
+main {
+  /*Start resume*/
+  .resume {
+    .title {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    .resume-content {
+      .row {
+        .experience-education {
+          .exp-card {
+            box-shadow: 0px 0px 20px rgba(7, 156, 255, 0.3);
+            transition: 0.5s;
+            &:hover {
+              margin-top: -0.3rem;
+              box-shadow: 0px 0px 2rem rgba(7, 156, 255, 0.75);
+            }
+            .exp-date {
+              position: absolute;
+              top: 0%;
+              right: 2%;
+            }
+            @media screen and (max-width: 991px) {
+              .exp-date {
+                position: relative;
+                padding-left: 1rem;
+              }
+            }
+          }
+          .edu-card {
+            box-shadow: 0px 0px 20px rgba(7, 156, 255, 0.3);
+            transition: 0.5s;
+            &:hover {
+              margin-top: -0.3rem;
+              box-shadow: 0px 0px 2rem rgba(7, 156, 255, 0.75);
+            }
+            .edu-date {
+              position: absolute;
+              top: 0%;
+              right: 2.5%;
+            }
+            @media screen and (max-width: 991px) {
+              .edu-date {
+                position: relative;
+              }
+            }
+          }
+        }
+        .skills {
+          .container {
+            .row {
+              .front-skills {
+                box-shadow: 0px 0px 20px rgba(7, 156, 255, 0.3);
+                transition: 0.5s;
+                &:hover {
+                  margin-top: -0.3rem;
+                  box-shadow: 0px 0px 2rem rgba(7, 156, 255, 0.75);
+                }
+                .skill {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  label {
+                    width: 100%;
+                  }
+                }
+              }
+              .back-skills {
+                box-shadow: 0px 0px 20px rgba(7, 156, 255, 0.3);
+                transition: 0.5s;
+                &:hover {
+                  margin-top: -0.3rem;
+                  box-shadow: 0px 0px 2rem rgba(7, 156, 255, 0.75);
+                }
+                .skill {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+              }
+              .lang-skills {
+                box-shadow: 0px 0px 20px rgba(7, 156, 255, 0.3);
+                transition: 0.5s;
+                &:hover {
+                  margin-top: -0.3rem;
+                  box-shadow: 0px 0px 2rem rgba(7, 156, 255, 0.75);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /*End Resume*/
+  .services {
+    .title {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    .web-card {
+      &:hover {
+        background: linear-gradient(#fd8590 0%, #fc364a 100%);
+        color: white;
+      }
+    }
+    .graphic-card {
+      &:hover {
+        background: linear-gradient(#ce9ffc 0%, #861bf1 100%);
+        color: white;
+      }
+    }
+    .ux-card {
+      &:hover {
+        background: linear-gradient(#31eeda 0%, #0dcbd0 100%);
+        color: white;
+      }
+    }
+    .mobile-card {
+      &:hover {
+        background: linear-gradient(#ffe00d 0%, #fea127 100%);
+        color: white;
+      }
+    }
+    .seo-card {
+      &:hover {
+        background: linear-gradient(#3b99fe 0%, #3b54ff 100%);
+        color: white;
+      }
+    }
+    .digi-card {
+      &:hover {
+        background: linear-gradient(#81fbb8 0%, #0eb559 100%);
+        color: white;
+      }
+    }
+  }
+  .portfolio {
+    .title {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    img {
+      transition: 0.5s;
+      &:hover {
+        box-shadow: 0px 32px 75px rgba(7, 156, 255, 0.75);
+      }
+    }
+    .container {
+      .load-more {
+        box-shadow: 0px 0 1rem rgba(252, 59, 78, 0.24);
+        width: auto;
+        color: white;
+        transition: 0.5s;
+        border: none;
+        &:hover {
+          box-shadow: 0px 0 3rem rgba(252, 59, 78, 0.75);
+        }
+      }
+    }
+  }
+  .blog {
+    .title {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+    .container {
+      .row {
+        div {
+          .card {
+            box-shadow: 0px 32px 75px rgba(7, 156, 255, 0.09);
+            transition: 0.5s;
+            &:hover {
+              box-shadow: 0px 32px 75px rgba(7, 156, 255, 0.75);
+            }
+            .blog-btn {
+              color: white;
+              border: none;
+              box-shadow: 0px 0 1rem rgba(252, 59, 78, 0.24);
+              transition: 0.5s;
+              &:hover {
+                box-shadow: 0px 0 3rem rgba(252, 59, 78, 0.75);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .title {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+}
+/*End main*/
+footer {
+  .contact {
+    background-image: url("src/images/map.png");
+    background-size: cover;
+    .container {
+      div {
+        div {
+          .form {
+            form {
+              background-color: white;
+              filter: drop-shadow(0px 0px 24px rgba(7, 156, 255, 0.16));
+              .form-content {
+                input {
+                  border: rgba(7, 156, 255, 0.16);
+                  &:hover {
+                    border: none;
+                  }
+                }
+                filter: drop-shadow(0px 0px 24px rgba(7, 156, 255, 0.16));
+                a {
+                  box-shadow: 0px 16px 24px rgba(252, 56, 76, 0.24);
+                  color: white;
+                  border: none;
+                  transition: 00.5s;
+                  &:hover {
+                    box-shadow: 0px 0 3rem rgba(252, 56, 76, 0.8);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
